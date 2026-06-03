@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrightSmile Dental Clinic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C8 2 5 5.5 5 9c0 2.5 1 4.5 2.5 6L9 21h6l1.5-6C18 13.5 19 11.5 19 9c0-3.5-3-7-7-7z"
+            />
+          </svg>
+        </div>
+        BrightSmile
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a href="#services" data-en="Services" data-es="Servicios"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="#doctors" data-en="Doctors" data-es="Doctores">Doctors</a>
+        </li>
+        <li>
+          <a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a>
+        </li>
+        <li>
+          <a href="#testimonials" data-en="Testimonials" data-es="Testimonios"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langBtn">ES</button>
+        <a
+          href="#contact"
+          class="btn btn-primary"
+          data-en="Book Appointment"
+          data-es="Agendar Cita"
+          >Book Appointment</a
+        >
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <!-- Replace src with your actual video file, e.g. src="assets/clinic.mp4" -->
+        <source
+          src="https://www.pexels.com/download/video/14934108/"
+          muted
+          autoplay
+          loop
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <p
+          class="section-label"
+          data-en="Welcome to BrightSmile"
+          data-es="Bienvenido a BrightSmile"
+        >
+          Welcome to BrightSmile
+        </p>
+        <h1
+          data-en="Your healthy <span>smile</span> starts here"
+          data-es="Tu sonrisa <span>saludable</span> empieza aquí"
+        >
+          Your healthy <span>smile</span> starts here
+        </h1>
+        <p
+          data-en="We provide comprehensive dental care for the whole family in a comfortable, modern environment."
+          data-es="Brindamos atención dental integral para toda la familia en un ambiente cómodo y moderno."
+        >
+          We provide comprehensive dental care for the whole family in a
+          comfortable, modern environment.
+        </p>
+        <div class="hero-btns">
+          <a
+            href="#contact"
+            class="btn btn-white"
+            data-en="Book a Consultation"
+            data-es="Agendar Consulta"
+            >Book a Consultation</a
+          >
+          <a
+            href="#services"
+            class="btn btn-outline-white"
+            data-en="Our Services"
+            data-es="Nuestros Servicios"
+            >Our Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-num">2,000+</div>
+        <div
+          class="stat-label"
+          data-en="Happy Patients"
+          data-es="Pacientes Felices"
+        >
+          Happy Patients
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">15+</div>
+        <div
+          class="stat-label"
+          data-en="Years of Experience"
+          data-es="Años de Experiencia"
+        >
+          Years of Experience
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">98%</div>
+        <div
+          class="stat-label"
+          data-en="Satisfaction Rate"
+          data-es="Tasa de Satisfacción"
+        >
+          Satisfaction Rate
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label" data-en="Specialists" data-es="Especialistas">
+          Specialists
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-bg">
+      <div
+        class="section-header"
+        style="text-align: center; margin-bottom: 48px"
+      >
+        <span
+          class="section-label"
+          data-en="What We Offer"
+          data-es="Lo Que Ofrecemos"
+          >What We Offer</span
+        >
+        <h2
+          class="section-heading"
+          data-en="Our Dental Services"
+          data-es="Nuestros Servicios Dentales"
+        >
+          Our Dental Services
+        </h2>
+        <p
+          class="section-sub"
+          style="margin: 10px auto 0"
+          data-en="From routine checkups to full smile transformations, we've got you covered."
+          data-es="Desde revisiones rutinarias hasta transformaciones completas de sonrisa, te tenemos cubierto."
+        >
+          From routine checkups to full smile transformations, we've got you
+          covered.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8 2 5 5.5 5 9c0 2.5 1 4.5 2.5 6L9 21h6l1.5-6C18 13.5 19 11.5 19 9c0-3.5-3-7-7-7z"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h3 data-en="General Dentistry" data-es="Odontología General">
+            General Dentistry
+          </h3>
+          <p
+            data-en="Routine cleanings, checkups, fillings, and preventive care to keep your smile healthy."
+            data-es="Limpiezas, revisiones, empastes y cuidado preventivo para mantener tu sonrisa sana."
+          >
+            Routine cleanings, checkups, fillings, and preventive care to keep
+            your smile healthy.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1"
+              />
+            </svg>
+          </div>
+          <h3 data-en="Cosmetic Dentistry" data-es="Odontología Estética">
+            Cosmetic Dentistry
+          </h3>
+          <p
+            data-en="Veneers, bonding, and smile makeovers designed to boost your confidence."
+            data-es="Carillas, resinas y diseño de sonrisa para aumentar tu confianza."
+          >
+            Veneers, bonding, and smile makeovers designed to boost your
+            confidence.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          <h3 data-en="Orthodontics" data-es="Ortodoncia">Orthodontics</h3>
+          <p
+            data-en="Braces and clear aligners to straighten your teeth at any age."
+            data-es="Brackets y alineadores transparentes para corregir tu dentadura a cualquier edad."
+          >
+            Braces and clear aligners to straighten your teeth at any age.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="4" />
+              <path d="M8 12h8M12 8v8" />
+            </svg>
+          </div>
+          <h3 data-en="Dental Implants" data-es="Implantes Dentales">
+            Dental Implants
+          </h3>
+          <p
+            data-en="Permanent, natural-looking tooth replacements that restore your full smile."
+            data-es="Reemplazos permanentes de dientes de aspecto natural que restauran tu sonrisa."
+          >
+            Permanent, natural-looking tooth replacements that restore your full
+            smile.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3a9 9 0 110 18A9 9 0 0112 3z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 data-en="Teeth Whitening" data-es="Blanqueamiento Dental">
+            Teeth Whitening
+          </h3>
+          <p
+            data-en="Professional in-office and take-home whitening treatments for a brighter smile."
+            data-es="Tratamientos profesionales de blanqueamiento en clínica y en casa para una sonrisa más brillante."
+          >
+            Professional in-office and take-home whitening treatments for a
+            brighter smile.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h3 data-en="Pediatric Dentistry" data-es="Odontología Pediátrica">
+            Pediatric Dentistry
+          </h3>
+          <p
+            data-en="Gentle, friendly dental care for children in a welcoming, fun environment."
+            data-es="Atención dental amable para niños en un ambiente acogedor y divertido."
+          >
+            Gentle, friendly dental care for children in a welcoming, fun
+            environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section id="doctors">
+      <div style="text-align: center; margin-bottom: 48px">
+        <span class="section-label" data-en="Our Team" data-es="Nuestro Equipo"
+          >Our Team</span
+        >
+        <h2
+          class="section-heading"
+          data-en="Meet Our Specialists"
+          data-es="Conoce a Nuestros Especialistas"
+        >
+          Meet Our Specialists
+        </h2>
+        <p
+          class="section-sub"
+          style="margin: 10px auto 0"
+          data-en="Highly trained professionals dedicated to your oral health and comfort."
+          data-es="Profesionales altamente capacitados dedicados a tu salud bucal y comodidad."
+        >
+          Highly trained professionals dedicated to your oral health and
+          comfort.
+        </p>
+      </div>
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <!-- Replace src with real photo, e.g. src="assets/dr-reyes.jpg" -->
+          <img
+            class="doctor-photo"
+            src="https://picsum.photos/seed/doctor1/300/300"
+            alt="Dr. Valentina Reyes"
+          />
+          <h3>Dr. Valentina Reyes</h3>
+          <p
+            class="specialty"
+            data-en="Cosmetic & Restorative"
+            data-es="Estética y Restauradora"
+          >
+            Cosmetic & Restorative
+          </p>
+          <p
+            data-en="Over 12 years of experience creating beautiful, confident smiles for patients of all ages."
+            data-es="Más de 12 años creando sonrisas hermosas y seguras para pacientes de todas las edades."
+          >
+            Over 12 years of experience creating beautiful, confident smiles for
+            patients of all ages.
+          </p>
+        </div>
+        <div class="doctor-card">
+          <img
+            class="doctor-photo"
+            src="https://picsum.photos/seed/doctor2/300/300"
+            alt="Dr. Marco Ibáñez"
+          />
+          <h3>Dr. Marco Ibáñez</h3>
+          <p
+            class="specialty"
+            data-en="Orthodontics & Implants"
+            data-es="Ortodoncia e Implantes"
+          >
+            Orthodontics & Implants
+          </p>
+          <p
+            data-en="Specialist in modern orthodontic techniques and full-mouth implant rehabilitation."
+            data-es="Especialista en técnicas modernas de ortodoncia y rehabilitación oral completa con implantes."
+          >
+            Specialist in modern orthodontic techniques and full-mouth implant
+            rehabilitation.
+          </p>
+        </div>
+        <div class="doctor-card">
+          <img
+            class="doctor-photo"
+            src="https://picsum.photos/seed/doctor3/300/300"
+            alt="Dr. Sofia Laurent"
+          />
+          <h3>Dr. Sofia Laurent</h3>
+          <p
+            class="specialty"
+            data-en="General & Pediatric"
+            data-es="General y Pediátrica"
+          >
+            General & Pediatric
+          </p>
+          <p
+            data-en="Passionate about preventive care and making dental visits a positive experience for children."
+            data-es="Apasionada por el cuidado preventivo y hacer de las visitas dentales una experiencia positiva para los niños."
+          >
+            Passionate about preventive care and making dental visits a positive
+            experience for children.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-bg">
+      <div style="text-align: center; margin-bottom: 48px">
+        <span
+          class="section-label"
+          data-en="Our Results"
+          data-es="Nuestros Resultados"
+          >Our Results</span
+        >
+        <h2
+          class="section-heading"
+          data-en="Before & After"
+          data-es="Antes y Después"
+        >
+          Before & After
+        </h2>
+        <p
+          class="section-sub"
+          style="margin: 10px auto 0"
+          data-en="Real transformations from our patients — see what's possible."
+          data-es="Transformaciones reales de nuestros pacientes — mira lo que es posible."
+        >
+          Real transformations from our patients — see what's possible.
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <div class="gallery-photos">
+            <!-- Replace src with real before/after photos -->
+            <div class="gallery-photo-wrap before">
+              <img
+                src="https://images.pexels.com/photos/7298633/pexels-photo-7298633.jpeg"
+                alt="Before smile makeover"
+              />
+              <span class="photo-label" data-en="Before" data-es="Antes"
+                >Before</span
+              >
+            </div>
+            <div class="gallery-photo-wrap after">
+              <img
+                src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg"
+                alt="After smile makeover"
+              />
+              <span class="photo-label" data-en="After" data-es="Después"
+                >After</span
+              >
+            </div>
+          </div>
+          <div
+            class="gallery-card-label"
+            data-en="Smile Makeover"
+            data-es="Diseño de Sonrisa"
+          >
+            Smile Makeover
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-photos">
+            <div class="gallery-photo-wrap before">
+              <img
+                src="https://images.pexels.com/photos/12474261/pexels-photo-12474261.jpeg"
+                alt="Before teeth whitening"
+              />
+              <span class="photo-label" data-en="Before" data-es="Antes"
+                >Before</span
+              >
+            </div>
+            <div class="gallery-photo-wrap after">
+              <img
+                src="https://images.pexels.com/photos/28110692/pexels-photo-28110692.jpeg"
+                alt="After teeth whitening"
+              />
+              <span class="photo-label" data-en="After" data-es="Después"
+                >After</span
+              >
+            </div>
+          </div>
+          <div
+            class="gallery-card-label"
+            data-en="Teeth Whitening"
+            data-es="Blanqueamiento"
+          >
+            Teeth Whitening
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-photos">
+            <div class="gallery-photo-wrap before">
+              <img
+                src="https://www.ismilespecialists.com/sites/default/files/2020-07/crooked%20teeth-comp.jpeg"
+                alt="Before orthodontics"
+              />
+              <span class="photo-label" data-en="Before" data-es="Antes"
+                >Before</span
+              >
+            </div>
+            <div class="gallery-photo-wrap after">
+              <img
+                src="https://images.pexels.com/photos/16212691/pexels-photo-16212691.png"
+                alt="After orthodontics"
+              />
+              <span class="photo-label" data-en="After" data-es="Después"
+                >After</span
+              >
+            </div>
+          </div>
+          <div
+            class="gallery-card-label"
+            data-en="Orthodontic Treatment"
+            data-es="Tratamiento Ortodoncia"
+          >
+            Orthodontic Treatment
+          </div>
+        </div>
+      </div>
+      <p
+        class="gallery-note"
+        data-en="Results may vary. All treatments performed by licensed specialists."
+        data-es="Los resultados pueden variar. Todos los tratamientos son realizados por especialistas certificados."
+      >
+        Results may vary. All treatments performed by licensed specialists.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials-bg">
+      <div style="text-align: center; margin-bottom: 48px">
+        <span
+          class="section-label"
+          data-en="Patient Stories"
+          data-es="Testimonios"
+          >Patient Stories</span
+        >
+        <h2
+          class="section-heading"
+          data-en="What Our Patients Say"
+          data-es="Lo Que Dicen Nuestros Pacientes"
+        >
+          What Our Patients Say
+        </h2>
+        <p
+          class="section-sub"
+          style="margin: 10px auto 0; color: rgba(255, 255, 255, 0.75)"
+          data-en="Don't just take our word for it — hear from our happy patients."
+          data-es="No solo confíes en nuestra palabra — escucha a nuestros pacientes satisfechos."
+        >
+          Don't just take our word for it — hear from our happy patients.
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote
+            data-en="I was terrified of the dentist but the team here made me feel completely at ease. Best dental experience of my life!"
+            data-es="Le tenía terror al dentista, pero el equipo aquí me hizo sentir completamente tranquila. ¡La mejor experiencia dental de mi vida!"
+          >
+            "I was terrified of the dentist but the team here made me feel
+            completely at ease. Best dental experience of my life!"
+          </blockquote>
+          <div class="testimonial-author">María T.</div>
+          <div class="testimonial-city">Ciudad de México</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote
+            data-en="Dr. Ibáñez did my implants and the results are incredible. You can't tell them apart from real teeth. Highly recommend!"
+            data-es="El Dr. Ibáñez me hizo los implantes y los resultados son increíbles. No se distinguen de los dientes reales. ¡Lo recomiendo ampliamente!"
+          >
+            "Dr. Ibáñez did my implants and the results are incredible. You
+            can't tell them apart from real teeth. Highly recommend!"
+          </blockquote>
+          <div class="testimonial-author">James K.</div>
+          <div class="testimonial-city">New York</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote
+            data-en="My kids actually look forward to their appointments now! Dr. Laurent is amazing with children. The whole family comes here."
+            data-es="¡Mis hijos ahora esperan con ansias sus citas! La Dra. Laurent es increíble con los niños. Toda la familia viene aquí."
+          >
+            "My kids actually look forward to their appointments now! Dr.
+            Laurent is amazing with children. The whole family comes here."
+          </blockquote>
+          <div class="testimonial-author">Laura M.</div>
+          <div class="testimonial-city">Madrid</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div style="margin-bottom: 48px">
+        <span class="section-label" data-en="Get In Touch" data-es="Contáctanos"
+          >Get In Touch</span
+        >
+        <h2
+          class="section-heading"
+          data-en="Book Your Appointment"
+          data-es="Agenda Tu Cita"
+        >
+          Book Your Appointment
+        </h2>
+        <p
+          class="section-sub"
+          data-en="Ready for a healthier smile? Fill out the form and we'll get back to you within 24 hours."
+          data-es="¿Listo para una sonrisa más sana? Llena el formulario y te contactaremos en menos de 24 horas."
+        >
+          Ready for a healthier smile? Fill out the form and we'll get back to
+          you within 24 hours.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-en="Clinic Information" data-es="Información de la Clínica">
+            Clinic Information
+          </h3>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+            </div>
+            <div>
+              <strong data-en="Address" data-es="Dirección">Address</strong
+              ><span
+                >Av. Insurgentes Sur 1234, Piso 3<br />Col. Del Valle,
+                CDMX</span
+              >
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"
+                />
+              </svg>
+            </div>
+            <div>
+              <strong data-en="Phone" data-es="Teléfono">Phone</strong
+              ><span>+52 55 1234 5678</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+            </div>
+            <div><strong>Email</strong><span>contact@brightsmile.mx</span></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <strong data-en="Hours" data-es="Horario">Hours</strong
+              ><span
+                data-en="Mon–Fri 8am–7pm · Sat 9am–2pm"
+                data-es="Lun–Vie 8am–7pm · Sáb 9am–2pm"
+                >Mon–Fri 8am–7pm · Sat 9am–2pm</span
+              >
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1080.9415609414443!2d-99.10162888565166!3d19.513760173038143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1780269276157!5m2!1ses!2smx"
+              width="600"
+              height="450"
+              style="border: 0; width: 100%; height: 40dvh"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3 data-en="Request an Appointment" data-es="Solicitar una Cita">
+            Request an Appointment
+          </h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en="Full Name" data-es="Nombre Completo"
+                >Full Name</label
+              ><input
+                type="text"
+                data-placeholder-en="John Doe"
+                data-placeholder-es="Juan Pérez"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="form-group">
+              <label>Email</label
+              ><input type="email" placeholder="john@email.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en="Phone" data-es="Teléfono">Phone</label
+              ><input type="tel" placeholder="+52 55 0000 0000" />
+            </div>
+            <div class="form-group">
+              <label data-en="Service" data-es="Servicio">Service</label>
+              <select>
+                <option
+                  data-en="Select a service..."
+                  data-es="Selecciona un servicio..."
+                >
+                  Select a service...
+                </option>
+                <option
+                  data-en="General Dentistry"
+                  data-es="Odontología General"
+                >
+                  General Dentistry
+                </option>
+                <option
+                  data-en="Cosmetic Dentistry"
+                  data-es="Odontología Estética"
+                >
+                  Cosmetic Dentistry
+                </option>
+                <option data-en="Orthodontics" data-es="Ortodoncia">
+                  Orthodontics
+                </option>
+                <option data-en="Dental Implants" data-es="Implantes Dentales">
+                  Dental Implants
+                </option>
+                <option data-en="Teeth Whitening" data-es="Blanqueamiento">
+                  Teeth Whitening
+                </option>
+                <option
+                  data-en="Pediatric Dentistry"
+                  data-es="Odontología Pediátrica"
+                >
+                  Pediatric Dentistry
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-en="Preferred Date" data-es="Fecha Preferida"
+              >Preferred Date</label
+            ><input type="date" />
+          </div>
+          <div class="form-group">
+            <label data-en="Message (optional)" data-es="Mensaje (opcional)"
+              >Message (optional)</label
+            ><textarea
+              data-placeholder-en="Tell us about your needs..."
+              data-placeholder-es="Cuéntanos sobre tus necesidades..."
+            ></textarea>
+          </div>
+          <button
+            class="btn btn-primary btn-full"
+            data-en="Request Appointment"
+            data-es="Solicitar Cita"
+          >
+            Request Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="color: white">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M12 2C8 2 5 5.5 5 9c0 2.5 1 4.5 2.5 6L9 21h6l1.5-6C18 13.5 19 11.5 19 9c0-3.5-3-7-7-7z"
+                />
+              </svg>
+            </div>
+            BrightSmile
+          </a>
+          <p
+            data-en="Your smile is our mission. Quality dental care for the whole family."
+            data-es="Tu sonrisa es nuestra misión. Atención dental de calidad para toda la familia."
+          >
+            Your smile is our mission. Quality dental care for the whole family.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Services" data-es="Servicios">Services</h4>
+          <ul>
+            <li>
+              <a
+                href="#services"
+                data-en="General Dentistry"
+                data-es="Odontología General"
+                >General Dentistry</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                data-en="Cosmetic Dentistry"
+                data-es="Odontología Estética"
+                >Cosmetic Dentistry</a
+              >
+            </li>
+            <li>
+              <a href="#services" data-en="Orthodontics" data-es="Ortodoncia"
+                >Orthodontics</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                data-en="Dental Implants"
+                data-es="Implantes Dentales"
+                >Dental Implants</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Clinic" data-es="Clínica">Clinic</h4>
+          <ul>
+            <li>
+              <a
+                href="#doctors"
+                data-en="Our Doctors"
+                data-es="Nuestros Doctores"
+                >Our Doctors</a
+              >
+            </li>
+            <li>
+              <a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a>
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                data-en="Testimonials"
+                data-es="Testimonios"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#contact" data-en="Contact" data-es="Contacto"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+          <ul>
+            <li><a href="#">+52 55 1234 5678</a></li>
+            <li><a href="#">contact@brightsmile.mx</a></li>
+            <li>
+              <a href="#" data-en="Mon–Fri 8am–7pm" data-es="Lun–Vie 8am–7pm"
+                >Mon–Fri 8am–7pm</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© 2025 BrightSmile Dental.
+          <span
+            data-en="All rights reserved."
+            data-es="Todos los derechos reservados."
+            >All rights reserved.</span
+          ></span
+        >
+        <span data-en="Designed by" data-es="Diseñado por">Designed by</span>
+        <a href="https://github.com/TheRokku" style="margin-left: 4px">Rokk</a>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
